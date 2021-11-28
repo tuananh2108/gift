@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="btn">
+        <button class="btn-1">Mở ở đây nè</button>
+        <button class="btn-2">Lêu lêu, ở đây mới phải nè</button>
+        <button class="btn-3 btn-open">Em lại bị lừa rồi, mở ở đây nè.</button>
+    </div>
+    <div class="content">
+        <div class="content-start">
+            <marquee behavior="" direction="up" scrollamount="2" loop="1" height="150px">
+                <p class="text">Chào cô học trò đầu tiên của anh</p>
+                <p class="text">Đây là món quà nhỏ anh dành tặng cho em.</p>
+                <p class="text">Mặc dù chưa phải hoàn hảo nhất.</p>
+                <p class="text">Nhưng mong nó sẽ là động lực</p>
+                <p class="text">để em tiếp tục cố gắng học tập</p>
+                <p class="text">và theo đuổi ngành này.</p>
+                <p class="text">Bấm vào nút bên dưới để xem món quà đó là gì nhé! ^^</p>
+                <button class="btn-0">Mở quà</button>
+            </marquee>
+        </div>
+        <div class="content-main">
+            <h1 id="title-main">Music Player</h1>
+            <div class="music-container">
+                <div class="music-info">
+                    <h4 id="title">used to know (Orfeo. Remix)</h4>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <audio src="" id="audio"></audio>
+                <div class="img-container">
+                    <img src="" alt="music-cover" id="cover">
+                </div>
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
